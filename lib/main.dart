@@ -1,6 +1,7 @@
 import 'package:devexy/RegisterPage.dart';
 import 'package:devexy/homepage.dart';
 import 'package:devexy/loginpage.dart';
+import 'package:devexy/ProfilePage.dart';  // Import the profile page
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -49,6 +50,7 @@ class _MyAppState extends State<MyApp> {
         '/login': (context) => LoginPage(toggleTheme: _toggleTheme, isDarkMode: _isDarkMode),
         '/register': (context) => RegisterPage(toggleTheme: _toggleTheme, isDarkMode: _isDarkMode),
         '/home': (context) => HomePage(toggleTheme: _toggleTheme, isDarkMode: _isDarkMode),
+        '/profile': (context) => ProfilePage(isDarkMode: _isDarkMode),  // Added profile page route
       },
     );
   }
